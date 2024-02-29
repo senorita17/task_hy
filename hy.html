@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV URL Categorizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #eda8a8;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e67e7e;
+        }
+
+        input[type="file"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>CSV URL Categorizer</h2>
+
+<input type="file" id="csvFileInput" accept=".csv" />
+<button onclick="handleFile()">Read CSV</button>
+
+<table id="dataTable">
+    <!-- Table content will be added dynamically -->
+</table>
+
+<script src="hy.js"></script>
+
+</body>
+</html>
